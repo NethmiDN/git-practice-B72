@@ -1,0 +1,6 @@
+Here is our fist day of Internet Technolgies B72
+
+First day content
+=====================
+
+1.Version Controlling System (VCS)
