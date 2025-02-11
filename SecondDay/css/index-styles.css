@@ -35,3 +35,96 @@
     font-size: 1.2em; /* Adjust font size as needed */
     margin-top: 10px; /* Add some spacing between "ISE" and the rest */
 }
+
+.profile_image {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
+}
+
+#name {
+    color: #3256a8;
+}
+
+#it {
+    text-align: center;
+}
+
+#mc {
+    color: #a83232;
+    text-align: center;
+}
+
+.lesson {
+    color: #0c042e;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.lesson-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.lesson-list ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lesson-list li {
+    margin-bottom: 10px;
+}
+
+.lesson-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.lesson-list a:hover {
+    color: red;
+}
+
+.exercise {
+    color: #0c042e;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.exercise-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.exercise-list ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exercise-list li {
+    margin-bottom: 10px;
+}
+
+.exercise-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.exercise-list a:hover {
+    color: red;
+}
