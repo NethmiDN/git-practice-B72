@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color:lightblue;
+            text-align: center;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 215px;
+            height: 350px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: left;
+            position: relative;
+        }
+
+        .lap {
+            width: 210px;
+            height: 100px;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 10px;
+        }
+
+        .head {
+            display: flex;
+        }
+
+        .price {
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 80px;
+        }
+
+        .explain {
+            overflow-y: scroll;
+        }
+        
+        .buy {
+            background-color: blue;
+            color: white;
+            width: 210px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .cart {
+            background-color:darkslategray;
+            color: white;
+            width: 210px;
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width:575px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:767px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:991px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width:1200px) and (max-width:1399px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width:1400px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Products Gallery</h1>
+    <div class="container">
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div><div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/laptop.jpg" alt="icon" class="lap">
+        <div class="head">
+            <h4 class="name">Laptop</h4>
+            <h4 class="price">$399.99</h4>
+        </div>
+            <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum voluptate accusantium, quis nulla, voluptates dicta ex quisquam sit maxime, corrupti delectus molestiae magnam corporis ducimus earum pariatur reiciendis nostrum tempora.</p>
+        
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 6</title>
+    <title>Centered Square with Circles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9d591; /* Light beige background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .center-square {
+            width: 100px;
+            height: 100px;
+            background-color: #6a0dad; /* Purple square */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .center-square::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .circle.top-left {
+            background-color: #a80b0b; /* Red */
+            top: -100px;
+            left: -100px;
+        }
+
+        .circle.top-right {
+            background-color: #009688; /* Teal */
+            top: -100px;
+            right: -100px;
+        }
+
+        .circle.bottom-left {
+            background-color: #7ed957; /* Green */
+            bottom: -100px;
+            left: -100px;
+        }
+
+        .circle.bottom-right {
+            background-color: #a01c78; /* Magenta */
+            bottom: -100px;
+            right: -100px;
+        }
+    </style>
 </head>
 <body>
-    <p style="color:brown;"> <span style="font-style: italic;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Quaerat et aperiam corrupti perferendis quis,
-         adipisci <span style="font-weight: bold;"> voluptate possimus</span> minima repellat aspernatur veritatis maxime architecto, illo explicabo! 
-         Asperiores, <span style="text-decoration: underline;">error autem rem </span> expedita nesciunt cupiditate dolorum nobis, sapiente vitae, consequatur dolore. 
-         Deleniti <span style="background-color: blueviolet;"> mollitia doloribus error</span>  aliquam saepe dolore soluta vero earum accusamus delectus.</p>
+
+    <!-- Centered Square -->
+    <div class="center-square"></div>
+
+    <!-- Corner Circles -->
+    <div class="circle top-left"></div>
+    <div class="circle top-right"></div>
+    <div class="circle bottom-left"></div>
+    <div class="circle bottom-right"></div>
+
 </body>
 </html>

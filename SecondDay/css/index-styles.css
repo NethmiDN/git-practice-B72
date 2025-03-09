@@ -72,7 +72,7 @@
 
 .lesson-list ol {
     list-style: none;
-    padding: 0;
+    padding: 30px;
     margin: 0;
 }
 
@@ -102,13 +102,13 @@
 
 .exercise-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .exercise-list ol {
     list-style: none;
-    padding: 0;
+    padding: 30px;
     margin: 0;
 }
 
@@ -127,5 +127,41 @@
 }
 
 .exercise-list a:hover {
+    color: red;
+}
+
+.js {
+    color: #0c042e;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.js-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.js-list ol {
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+}
+
+.js-list li {
+    margin-bottom: 10px;
+}
+
+.js-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.js-list a:hover {
     color: red;
 }

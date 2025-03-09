@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: lightblue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin-top: 300px;
+            margin-left: 170px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:  20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            padding: 70px;
+            background-color: white;
+            border-radius: 10%;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 0 8px gray;
+            transition: transform 1s ease-in-out 1s;
+        }
+
+        .card:hover {
+            transform: scale(1.5);
+        }
+
+        .card p {
+            margin-top: -35px;
+            font-size:xx-large;
+            transition: transform 1s ease-in-out 1s;
+            align-items: center;
+        }
+
+        .card:hover .p:hover {
+            font-size: 52px;
+        }
+
+        .mood {
+            opacity: 0;
+        }
+
+        .card:hover .mood {
+            opacity: 1;
+        }
+
+        .card .mood {
+            transition: opacity 1s ease-in-out 1s;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"><p>😁</p><h5 class="mood">Happy</h5></div>
+        <div class="card"><p>😭</p><h5 class="mood">Crying</h5></div>
+        <div class="card"><p>😍</p><h5 class="mood">Love</h5></div>
+        <div class="card"><p>🤭</p><h5 class="mood">Shy</h5></div>
+    </div>
+</body>
+</html>

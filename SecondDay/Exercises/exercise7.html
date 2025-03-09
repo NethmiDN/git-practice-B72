@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bar {
+            height: 50px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: end;
+
+        }
+
+        #icon {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            border-radius: 50%;
+        }
+
+        #name {
+            font-size: medium;
+            position: absolute;
+            top: 3px;
+            left: 60px;
+        }
+
+        #welcome {
+            position: absolute;
+            top: 30%;
+            left: 60px;
+        }
+
+        #paragraph  {
+            position: absolute;
+            top: 40%;
+            left: 60px;
+        }
+
+        #button {
+            background-color: black;
+            width: 800px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            position: fixed;
+            top: 55%;
+            left: 60px;
+        }
+        
+        #contact {
+            position: fixed;
+            top: 60%;
+            left: 350px;
+        }
+
+        #me {
+            position: fixed;
+            left: 52%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <nav>
+                <div class="bar">
+                    <img src="/assets/images/prof img.jpg" alt="icon" id="icon">
+                    <p id="name">Nethmi Nanayakkara</p>
+                    <li><a href="">Home</a></li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <h1 id="welcome">Welcome to my website</h1>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur eligendi sapiente tempore molestiae, odit nihil officia 
+        <br/> nostrum ea accusamus, et laudantium totam unde accusantium dicta? Optio, quis. Magnam ullam fugiat numquam perferendis 
+        <br/> doloremque sed ea eius quae ipsa repellat recusandae fugit similique in, incidunt nemo ratione modi sunt distinctio!</p>
+
+        <button type="More" id="button">More Info</button>
+
+    <section id="contact">
+
+        <a href="https://www.facebook.com/share/1DPN8Wzc1z/"target="blank"><img src="/assets/images/facebook.png" alt="facebook" style="width: 50px; height: 50px; object-fit: cover;"/></a>
+
+        <a href="https://github.com/NethmiDN" target="blank"><img src="/assets/images/github.png" alt="github" style="width: 50px; height: 50px; object-fit: cover;"/></a>
+
+        <a href="www.youtube.com/@nethminanayakkara7057" target="_blank"><img src="/assets/images/youtube.png" alt="yt" style="width: 50px; height: 50px; object-fit: cover;"/></a>
+             
+        <a href="https://www.linkedin.com/feed/"target="blank"><img src="/assets/images/linkedin.png" alt="linkedin" style="width: 50px; height: 50px; object-fit: cover;"/></a>
+
+    </section>
+
+    <section id="me">
+        <img src="/assets/images/prof img.jpg" alt="me" style="width: 75%; height: 100%; object-fit: cover;">
+    </section>
+</body>
+</html>

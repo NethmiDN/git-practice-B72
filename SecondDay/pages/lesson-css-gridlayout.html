@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson CSS Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            /*grid-template-columns: 10% 20% 30% 50% ;
+            grid-template-columns: 1fr 2fr 4fr 2fr 1fr;*/
+            grid-template-columns: repeat(2, 1fr);
+            gap:  12px;
+
+        }
+
+        .container > div{
+            background-color: bisque;
+            border: 1px solid black;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Lorem ipsum dolor 🤸🏻‍♂️sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum 🐕dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, illo magni? Nemo mollitia officiis porro, iusto iure velit quae. Doloremque?</div>
+
+    </div>
+</body>
+</html>

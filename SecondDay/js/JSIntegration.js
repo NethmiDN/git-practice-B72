@@ -1,0 +1,1 @@
+console.log('JSIntegration.js is loaded');

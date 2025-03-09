@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            /*animation-name: down-up;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;*/
+
+            /*animation: down-up 2s ease-in-out infinite 1s;*/
+
+            /*animation: background-change 2s infinite 0s;*/
+
+            animation: go-around 4s infinite 0s;
+        }
+
+        @keyframes go-around {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(200px);
+            }
+            50% {
+                transform: translateY(200px) translateX(200px);
+            }
+            75% {
+                transform: translateX(0) translateY(200px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+
+        /*css @ rules*/
+        /*@keyframes down-up {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(400px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }*/
+
+        /*@keyframes background-change {
+            0% {
+                background-color: aqua;
+            }
+            25% {
+                background-color:chocolate;
+            }
+            50% {
+                background-color: violet;
+            }
+            75% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: aqua;
+            }*/
+
+            /*from {
+                background-color: blueviolet;
+            }
+            to {
+                background-color: tomato;
+            }*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
